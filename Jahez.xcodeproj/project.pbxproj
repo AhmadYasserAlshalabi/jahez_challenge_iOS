@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E01C2BE27D0E06100C124C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2BD27D0E06100C124C5 /* AppDelegate.swift */; };
+		0E01C2C727D0E06200C124C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E01C2C627D0E06200C124C5 /* Assets.xcassets */; };
+		0E01C2CA27D0E06200C124C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E01C2C827D0E06200C124C5 /* LaunchScreen.storyboard */; };
+		0E01C2D527D0E0BB00C124C5 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2D427D0E0BB00C124C5 /* RestaurantsViewController.swift */; };
+		0E01C2D727D0E0CA00C124C5 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2D627D0E0CA00C124C5 /* Restaurant.swift */; };
+		0E01C2E627D1BDA800C124C5 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2E527D1BDA800C124C5 /* RestaurantDetailsViewController.swift */; };
+		0E01C2E927D1D16100C124C5 /* GetRestaurantsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2E827D1D16100C124C5 /* GetRestaurantsData.swift */; };
+		0E01C2EC27D219DF00C124C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2EB27D219DF00C124C5 /* Colors.swift */; };
+		0EB184A527D5D4180084B6C5 /* FilterSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A427D5D4180084B6C5 /* FilterSideMenuViewController.swift */; };
+		0EB184A727D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */; };
+		0EB184A927D5E5610084B6C5 /* FilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A827D5E5610084B6C5 /* FilterSection.swift */; };
+		0EB184AB27D5E7240084B6C5 /* FilterSectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */; };
+		0EE66CA827D2375E00D2EB3A /* SplushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CA727D2375E00D2EB3A /* SplushViewController.swift */; };
+		0EE66CAA27D2377900D2EB3A /* jahez.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0EE66CA927D2377900D2EB3A /* jahez.mp4 */; };
+		0EE66CB027D2C60800D2EB3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CAF27D2C60800D2EB3A /* Constants.swift */; };
+		0EE66CB627D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CB527D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift */; };
+		0EE66CBC27D5733A00D2EB3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CBB27D5733A00D2EB3A /* Extensions.swift */; };
+		DBCA5E4C6BFE846FE5500052 /* Pods_Jahez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66C060048F0DCA1BD7248E0 /* Pods_Jahez.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E01C2BA27D0E06100C124C5 /* Jahez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jahez.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E01C2BD27D0E06100C124C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E01C2C627D0E06200C124C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E01C2C927D0E06200C124C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E01C2CB27D0E06200C124C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E01C2D427D0E0BB00C124C5 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		0E01C2D627D0E0CA00C124C5 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		0E01C2E527D1BDA800C124C5 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
+		0E01C2E827D1D16100C124C5 /* GetRestaurantsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRestaurantsData.swift; sourceTree = "<group>"; };
+		0E01C2EB27D219DF00C124C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0EB184A427D5D4180084B6C5 /* FilterSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSideMenuViewController.swift; sourceTree = "<group>"; };
+		0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		0EB184A827D5E5610084B6C5 /* FilterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSection.swift; sourceTree = "<group>"; };
+		0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSectionProtocol.swift; sourceTree = "<group>"; };
+		0EE66CA727D2375E00D2EB3A /* SplushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplushViewController.swift; sourceTree = "<group>"; };
+		0EE66CA927D2377900D2EB3A /* jahez.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jahez.mp4; sourceTree = "<group>"; };
+		0EE66CAF27D2C60800D2EB3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0EE66CB527D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell_1.swift; sourceTree = "<group>"; };
+		0EE66CBB27D5733A00D2EB3A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		457F1E8B8FC00BA8C683FF71 /* Pods-Jahez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jahez.debug.xcconfig"; path = "Target Support Files/Pods-Jahez/Pods-Jahez.debug.xcconfig"; sourceTree = "<group>"; };
+		96F52C51A4E36647B84BEC02 /* Pods-Jahez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jahez.release.xcconfig"; path = "Target Support Files/Pods-Jahez/Pods-Jahez.release.xcconfig"; sourceTree = "<group>"; };
+		A66C060048F0DCA1BD7248E0 /* Pods_Jahez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jahez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E01C2B727D0E06100C124C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCA5E4C6BFE846FE5500052 /* Pods_Jahez.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		055C96517CFF17EB0B7E7847 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				457F1E8B8FC00BA8C683FF71 /* Pods-Jahez.debug.xcconfig */,
+				96F52C51A4E36647B84BEC02 /* Pods-Jahez.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0E01C2B127D0E06000C124C5 = {
+			isa = PBXGroup;
+			children = (
+				0E01C2BC27D0E06100C124C5 /* Jahez */,
+				0E01C2BB27D0E06100C124C5 /* Products */,
+				055C96517CFF17EB0B7E7847 /* Pods */,
+				DE712152727B6A5088CE6B23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E01C2BB27D0E06100C124C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E01C2BA27D0E06100C124C5 /* Jahez.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E01C2BC27D0E06100C124C5 /* Jahez */ = {
+			isa = PBXGroup;
+			children = (
+				0E01C2BD27D0E06100C124C5 /* AppDelegate.swift */,
+				0E01C2CB27D0E06200C124C5 /* Info.plist */,
+				0E01C2EA27D219CE00C124C5 /* Assets */,
+				0E01C2D227D0E09000C124C5 /* Models */,
+				0E01C2D327D0E09600C124C5 /* Controllers */,
+				0E01C2D127D0E08D00C124C5 /* Views */,
+				0E01C2DC27D0EB8000C124C5 /* Services */,
+				0E01C2ED27D2276900C124C5 /* Utilities */,
+			);
+			path = Jahez;
+			sourceTree = "<group>";
+		};
+		0E01C2D127D0E08D00C124C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E01C2E727D1CD8000C124C5 /* UICollectionViewCells */,
+				0E01C2C827D0E06200C124C5 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E01C2D227D0E09000C124C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E01C2D627D0E0CA00C124C5 /* Restaurant.swift */,
+				0EB184A827D5E5610084B6C5 /* FilterSection.swift */,
+				0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E01C2D327D0E09600C124C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EB184A327D5D3EB0084B6C5 /* RestaurantsViewController */,
+				0E01C2E527D1BDA800C124C5 /* RestaurantDetailsViewController.swift */,
+				0EE66CA727D2375E00D2EB3A /* SplushViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0E01C2DC27D0EB8000C124C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0E01C2E827D1D16100C124C5 /* GetRestaurantsData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0E01C2E727D1CD8000C124C5 /* UICollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */,
+				0EE66CB527D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift */,
+			);
+			path = UICollectionViewCells;
+			sourceTree = "<group>";
+		};
+		0E01C2EA27D219CE00C124C5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0EE66CA927D2377900D2EB3A /* jahez.mp4 */,
+				0E01C2C627D0E06200C124C5 /* Assets.xcassets */,
+				0E01C2EB27D219DF00C124C5 /* Colors.swift */,
+				0EE66CAF27D2C60800D2EB3A /* Constants.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0E01C2ED27D2276900C124C5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0EE66CBB27D5733A00D2EB3A /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0EB184A327D5D3EB0084B6C5 /* RestaurantsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E01C2D427D0E0BB00C124C5 /* RestaurantsViewController.swift */,
+				0EB184A427D5D4180084B6C5 /* FilterSideMenuViewController.swift */,
+			);
+			path = RestaurantsViewController;
+			sourceTree = "<group>";
+		};
+		DE712152727B6A5088CE6B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A66C060048F0DCA1BD7248E0 /* Pods_Jahez.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E01C2B927D0E06100C124C5 /* Jahez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E01C2CE27D0E06200C124C5 /* Build configuration list for PBXNativeTarget "Jahez" */;
+			buildPhases = (
+				1B2C448280C32AF91A13BFBC /* [CP] Check Pods Manifest.lock */,
+				0E01C2B627D0E06100C124C5 /* Sources */,
+				0E01C2B727D0E06100C124C5 /* Frameworks */,
+				0E01C2B827D0E06100C124C5 /* Resources */,
+				BBD62D32C4DBEC471BE51C22 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jahez;
+			productName = Jahez;
+			productReference = 0E01C2BA27D0E06100C124C5 /* Jahez.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E01C2B227D0E06000C124C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0E01C2B927D0E06100C124C5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 0E01C2B527D0E06000C124C5 /* Build configuration list for PBXProject "Jahez" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E01C2B127D0E06000C124C5;
+			productRefGroup = 0E01C2BB27D0E06100C124C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E01C2B927D0E06100C124C5 /* Jahez */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E01C2B827D0E06100C124C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E01C2CA27D0E06200C124C5 /* LaunchScreen.storyboard in Resources */,
+				0EE66CAA27D2377900D2EB3A /* jahez.mp4 in Resources */,
+				0E01C2C727D0E06200C124C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B2C448280C32AF91A13BFBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jahez-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBD62D32C4DBEC471BE51C22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jahez/Pods-Jahez-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jahez/Pods-Jahez-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jahez/Pods-Jahez-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E01C2B627D0E06100C124C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE66CBC27D5733A00D2EB3A /* Extensions.swift in Sources */,
+				0EE66CA827D2375E00D2EB3A /* SplushViewController.swift in Sources */,
+				0E01C2EC27D219DF00C124C5 /* Colors.swift in Sources */,
+				0EB184AB27D5E7240084B6C5 /* FilterSectionProtocol.swift in Sources */,
+				0EB184A927D5E5610084B6C5 /* FilterSection.swift in Sources */,
+				0E01C2E927D1D16100C124C5 /* GetRestaurantsData.swift in Sources */,
+				0E01C2D727D0E0CA00C124C5 /* Restaurant.swift in Sources */,
+				0EE66CB627D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift in Sources */,
+				0EE66CB027D2C60800D2EB3A /* Constants.swift in Sources */,
+				0E01C2BE27D0E06100C124C5 /* AppDelegate.swift in Sources */,
+				0EB184A527D5D4180084B6C5 /* FilterSideMenuViewController.swift in Sources */,
+				0E01C2D527D0E0BB00C124C5 /* RestaurantsViewController.swift in Sources */,
+				0E01C2E627D1BDA800C124C5 /* RestaurantDetailsViewController.swift in Sources */,
+				0EB184A727D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0E01C2C827D0E06200C124C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E01C2C927D0E06200C124C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E01C2CC27D0E06200C124C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E01C2CD27D0E06200C124C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E01C2CF27D0E06200C124C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457F1E8B8FC00BA8C683FF71 /* Pods-Jahez.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKG97S6F2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jahez/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.landscapegardenplants.Jahez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E01C2D027D0E06200C124C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F52C51A4E36647B84BEC02 /* Pods-Jahez.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKG97S6F2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jahez/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.landscapegardenplants.Jahez;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E01C2B527D0E06000C124C5 /* Build configuration list for PBXProject "Jahez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E01C2CC27D0E06200C124C5 /* Debug */,
+				0E01C2CD27D0E06200C124C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E01C2CE27D0E06200C124C5 /* Build configuration list for PBXNativeTarget "Jahez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E01C2CF27D0E06200C124C5 /* Debug */,
+				0E01C2D027D0E06200C124C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E01C2B227D0E06000C124C5 /* Project object */;
+}
