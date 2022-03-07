@@ -19,6 +19,8 @@
 		0EB184A727D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */; };
 		0EB184A927D5E5610084B6C5 /* FilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A827D5E5610084B6C5 /* FilterSection.swift */; };
 		0EB184AB27D5E7240084B6C5 /* FilterSectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */; };
+		0EB184B327D6453F0084B6C5 /* JahezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184B227D6453F0084B6C5 /* JahezTests.swift */; };
+		0EB184BA27D64B560084B6C5 /* GetRestaurantsDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184B927D64B560084B6C5 /* GetRestaurantsDataTest.swift */; };
 		0EE66CA827D2375E00D2EB3A /* SplushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CA727D2375E00D2EB3A /* SplushViewController.swift */; };
 		0EE66CAA27D2377900D2EB3A /* jahez.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0EE66CA927D2377900D2EB3A /* jahez.mp4 */; };
 		0EE66CB027D2C60800D2EB3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CAF27D2C60800D2EB3A /* Constants.swift */; };
@@ -26,6 +28,16 @@
 		0EE66CBC27D5733A00D2EB3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CBB27D5733A00D2EB3A /* Extensions.swift */; };
 		DBCA5E4C6BFE846FE5500052 /* Pods_Jahez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66C060048F0DCA1BD7248E0 /* Pods_Jahez.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EB184B427D6453F0084B6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E01C2B227D0E06000C124C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E01C2B927D0E06100C124C5;
+			remoteInfo = Jahez;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0E01C2BA27D0E06100C124C5 /* Jahez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jahez.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +54,9 @@
 		0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		0EB184A827D5E5610084B6C5 /* FilterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSection.swift; sourceTree = "<group>"; };
 		0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSectionProtocol.swift; sourceTree = "<group>"; };
+		0EB184B027D6453F0084B6C5 /* JahezTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JahezTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB184B227D6453F0084B6C5 /* JahezTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezTests.swift; sourceTree = "<group>"; };
+		0EB184B927D64B560084B6C5 /* GetRestaurantsDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRestaurantsDataTest.swift; sourceTree = "<group>"; };
 		0EE66CA727D2375E00D2EB3A /* SplushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplushViewController.swift; sourceTree = "<group>"; };
 		0EE66CA927D2377900D2EB3A /* jahez.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jahez.mp4; sourceTree = "<group>"; };
 		0EE66CAF27D2C60800D2EB3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -61,6 +76,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0EB184AD27D6453F0084B6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				0E01C2BC27D0E06100C124C5 /* Jahez */,
+				0EB184B127D6453F0084B6C5 /* JahezTests */,
 				0E01C2BB27D0E06100C124C5 /* Products */,
 				055C96517CFF17EB0B7E7847 /* Pods */,
 				DE712152727B6A5088CE6B23 /* Frameworks */,
@@ -87,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0E01C2BA27D0E06100C124C5 /* Jahez.app */,
+				0EB184B027D6453F0084B6C5 /* JahezTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +204,15 @@
 			path = RestaurantsViewController;
 			sourceTree = "<group>";
 		};
+		0EB184B127D6453F0084B6C5 /* JahezTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EB184B227D6453F0084B6C5 /* JahezTests.swift */,
+				0EB184B927D64B560084B6C5 /* GetRestaurantsDataTest.swift */,
+			);
+			path = JahezTests;
+			sourceTree = "<group>";
+		};
 		DE712152727B6A5088CE6B23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +243,24 @@
 			productReference = 0E01C2BA27D0E06100C124C5 /* Jahez.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0EB184AF27D6453F0084B6C5 /* JahezTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB184B627D6453F0084B6C5 /* Build configuration list for PBXNativeTarget "JahezTests" */;
+			buildPhases = (
+				0EB184AC27D6453F0084B6C5 /* Sources */,
+				0EB184AD27D6453F0084B6C5 /* Frameworks */,
+				0EB184AE27D6453F0084B6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EB184B527D6453F0084B6C5 /* PBXTargetDependency */,
+			);
+			name = JahezTests;
+			productName = JahezTests;
+			productReference = 0EB184B027D6453F0084B6C5 /* JahezTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +273,10 @@
 				TargetAttributes = {
 					0E01C2B927D0E06100C124C5 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					0EB184AF27D6453F0084B6C5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0E01C2B927D0E06100C124C5;
 					};
 				};
 			};
@@ -239,6 +294,7 @@
 			projectRoot = "";
 			targets = (
 				0E01C2B927D0E06100C124C5 /* Jahez */,
+				0EB184AF27D6453F0084B6C5 /* JahezTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +307,13 @@
 				0E01C2CA27D0E06200C124C5 /* LaunchScreen.storyboard in Resources */,
 				0EE66CAA27D2377900D2EB3A /* jahez.mp4 in Resources */,
 				0E01C2C727D0E06200C124C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB184AE27D6453F0084B6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +383,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0EB184AC27D6453F0084B6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB184B327D6453F0084B6C5 /* JahezTests.swift in Sources */,
+				0EB184BA27D64B560084B6C5 /* GetRestaurantsDataTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EB184B527D6453F0084B6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E01C2B927D0E06100C124C5 /* Jahez */;
+			targetProxy = 0EB184B427D6453F0084B6C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0E01C2C827D0E06200C124C5 /* LaunchScreen.storyboard */ = {
@@ -506,6 +586,52 @@
 			};
 			name = Release;
 		};
+		0EB184B727D6453F0084B6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKG97S6F2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.landscapegardenplants.JahezTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jahez.app/Jahez";
+			};
+			name = Debug;
+		};
+		0EB184B827D6453F0084B6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKG97S6F2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.landscapegardenplants.JahezTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jahez.app/Jahez";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +649,15 @@
 			buildConfigurations = (
 				0E01C2CF27D0E06200C124C5 /* Debug */,
 				0E01C2D027D0E06200C124C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EB184B627D6453F0084B6C5 /* Build configuration list for PBXNativeTarget "JahezTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB184B727D6453F0084B6C5 /* Debug */,
+				0EB184B827D6453F0084B6C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
