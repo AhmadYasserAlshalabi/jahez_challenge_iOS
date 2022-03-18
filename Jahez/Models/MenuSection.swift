@@ -6,7 +6,16 @@
 //
 
 import Foundation
-class FilterSection {
+class MenuSection: Hashable {
+    
+    static func == (lhs: MenuSection, rhs: MenuSection) -> Bool {
+        return true
+    }
+    
+    var hashValue: Int {
+        return 0
+    }
+    
     public var imageName: String = ""
     public var name         : String = ""
     public var index        : Int = -1
@@ -21,4 +30,11 @@ class FilterSection {
         self.index = index
         self.isSelected = isSelected
     }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.name)
+        hasher.combine(self.index)
+    }
+
 }
+extension MenuSection { }

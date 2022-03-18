@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class Constants {
-    
+
     static let statusBarHeight = UIApplication.shared.connectedScenes
         .filter {$0.activationState == .foregroundActive }
         .map {$0 as? UIWindowScene }

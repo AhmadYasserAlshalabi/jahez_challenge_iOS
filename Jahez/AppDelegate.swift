@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = UINavigationController(rootViewController: viewController)
         navController.isNavigationBarHidden = false
         navController.view.backgroundColor = Colors.background
-        navController.setStatusBar(backgroundColor: Colors.background)
+//        navController.setStatusBar(backgroundColor: Colors.background)
         window!.rootViewController = navController
         window!.makeKeyAndVisible()
         

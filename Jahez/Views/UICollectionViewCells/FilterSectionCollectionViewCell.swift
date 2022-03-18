@@ -7,10 +7,10 @@
 
 import UIKit
 
-class FilterSectionCollectionViewCell: UICollectionViewCell {
+class FilterOrOfferCollectionViewCell: UICollectionViewCell {
     
     var index: Int!
-    var filterSection: FilterSection! {
+    var filterSection: MenuSection! {
         didSet {
             self.index = filterSection.index
             if filterSection.isSelected {
@@ -18,6 +18,12 @@ class FilterSectionCollectionViewCell: UICollectionViewCell {
             } else {
                 self.imageViewFilterSection.image = UIImage(named: filterSection.imageName)?.noir
             }
+        }
+    }
+    
+    var offer: Offer! {
+        didSet {
+            self.imageViewFilterSection.image = UIImage(named: offer.image)
         }
     }
     
@@ -38,15 +44,15 @@ class FilterSectionCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }
 
-extension FilterSectionCollectionViewCell {
+extension FilterOrOfferCollectionViewCell {
     func setupViews() {
         contentView.addSubview(imageViewFilterSection)
-        imageViewFilterSection.topAnchor.constraint(equalTo:self.contentView.topAnchor).isActive = true
-        imageViewFilterSection.leadingAnchor.constraint(equalTo:self.contentView.leadingAnchor).isActive = true
-        imageViewFilterSection.trailingAnchor.constraint(equalTo:self.contentView.trailingAnchor).isActive = true
+        imageViewFilterSection.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
+        imageViewFilterSection.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
+        imageViewFilterSection.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         imageViewFilterSection.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
 //        imageViewFilterSection.circlexssView()
         

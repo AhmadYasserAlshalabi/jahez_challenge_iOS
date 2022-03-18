@@ -62,7 +62,6 @@ class RestaurantCollectionViewCell_1: UICollectionViewCell {
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
-
     }()
     
     let labelDistance: UILabel = {

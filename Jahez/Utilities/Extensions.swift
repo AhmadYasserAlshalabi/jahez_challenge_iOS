@@ -31,7 +31,7 @@ extension UIViewController{
        return self.navigationController?.navigationBar.frame.height ?? 0.0
    }
     
-    func setUpNavigationBarTitleImage() {
+    func setUpNavigationBarLogoImage() {
         let navController = navigationController!
         let image = UIImage(named: "logo")!
         let imageView = UIImageView(image: image)
@@ -219,6 +219,15 @@ extension UIImage {
         }
         return nil
     }
+    
+    func imageWithImage(scaledToSize newSize: CGSize) -> UIImage {
+        
+        UIGraphicsBeginImageContext(newSize)
+        self.draw(in: CGRect(x: 0 ,y: 0 ,width: newSize.width ,height: newSize.height))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!.withRenderingMode(.alwaysOriginal)
+    }
 }
 
 extension UIView {
@@ -236,9 +245,34 @@ extension UIView {
         self.layer.shadowOffset = CGSize(width: 2, height: 4)
         self.layer.shadowRadius = 5
     }
-    
+    func slideInFromLeft(duration: TimeInterval = 0.3, completionDelegate: AnyObject? = nil) {
+        // Create a CATransition animation
+        let slideInFromLeftTransition = CATransition()
+
+        // Customize the animation's properties
+        slideInFromLeftTransition.type = CATransitionType.push
+        slideInFromLeftTransition.subtype = CATransitionSubtype.fromLeft
+        slideInFromLeftTransition.duration = duration
+        slideInFromLeftTransition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        slideInFromLeftTransition.fillMode = CAMediaTimingFillMode.removed
+
+        // Add the animation to the View's layer
+        self.layer.add(slideInFromLeftTransition, forKey: "slideInFromLeftTransition")
+    }
+
 }
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
 
 
 

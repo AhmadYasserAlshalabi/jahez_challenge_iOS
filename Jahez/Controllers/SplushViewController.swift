@@ -45,7 +45,10 @@ extension SplushViewController {
         }
         
     }
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
 }
 
 extension SplushViewController {

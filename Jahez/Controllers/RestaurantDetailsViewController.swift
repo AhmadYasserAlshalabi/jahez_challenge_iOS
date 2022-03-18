@@ -23,11 +23,18 @@ class RestaurantDetailsViewController: UIViewController {
         }
     }
     
+    var sections: [SectionFoods] = []
+    var sectionFoods: SectionFoods!
+    var itemsCart: [ItemFood] = []
+    
+    var collectionViewSections: UICollectionView!
+    var collectionViewItemsFood: UICollectionView!
+    
     var viewBachground: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 5
         view.backgroundColor = .white
-        view.addShadow()
+//        view.addShadow()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -139,6 +146,10 @@ class RestaurantDetailsViewController: UIViewController {
         return stackView
     }()
 
+    @objc func onFilterButtonClicked() {
+        
+    }
+    
 }
 
 //MARK: - LifeCycle:
@@ -147,14 +158,49 @@ extension RestaurantDetailsViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUpNavigationBarTitleImage()
+        self.setUpNavigationBarLogoImage()
         self.view.backgroundColor = Colors.background
+        self.cartButtonNavBar()
         self.setupViews(rating: Int(self.restaurant.rating)!)
     }
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
 }
 
 extension RestaurantDetailsViewController {
+    func cartButtonNavBar() {
+        let iconSize = CGRect(origin: CGPoint.zero, size: CGSize(width: 30, height: 30))
+        let customView: UIView = UIView(frame: iconSize)
+        let icon = UIImage(named: "cart")
+        let iconButton = UIButton(frame: iconSize)
+        iconButton.setBackgroundImage(icon, for: .normal)
+        customView.addSubview(iconButton)
+        let barButton = UIBarButtonItem(customView: customView)
+        iconButton.addTarget(self, action: #selector(onFilterButtonClicked), for: .touchUpInside)
+        barButton.customView?.translatesAutoresizingMaskIntoConstraints = false
+        barButton.customView?.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        barButton.customView?.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        
+        
+        if itemsCart.count > 0 {
+            let attachmentCount = UIButton(frame: CGRect(x: 20, y: 0, width: 20, height: 14))
+            attachmentCount.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+            attachmentCount.layer.cornerRadius = 7
+            attachmentCount.backgroundColor = .systemYellow
+            attachmentCount.setTitle("\(self.itemsCart.count)", for: .normal)
+            customView.addSubview(attachmentCount)
+        } else {
+            
+        }
+        
+        self.navigationItem.setRightBarButton(barButton, animated: false)
+        
+        
+        
+        
+    }
     func setupViews(rating: Int) {
         self.view.addSubview(viewBachground)
         self.view.addSubview(viewBachgroundRestaurant)
@@ -182,8 +228,6 @@ extension RestaurantDetailsViewController {
         imageViewRestaurant.widthAnchor.constraint(equalTo: self.viewContainerImageViewRestaurant.widthAnchor).isActive = true
         imageViewRestaurant.heightAnchor.constraint(equalTo: self.viewContainerImageViewRestaurant.heightAnchor).isActive = true
         
-        
-        
         labelName.topAnchor.constraint(equalTo:self.viewContainerImageViewRestaurant.bottomAnchor, constant: 10).isActive = true
         labelName.leadingAnchor.constraint(equalTo:self.view.leadingAnchor, constant: 30).isActive = true
         
@@ -207,12 +251,9 @@ extension RestaurantDetailsViewController {
         labelHours.centerXAnchor.constraint(equalTo: self.viewContainerHours.centerXAnchor).isActive = true
         labelHours.centerYAnchor.constraint(equalTo: self.viewContainerHours.centerYAnchor).isActive = true
 
-//        labelRating.centerXAnchor.constraint(equalTo: self.viewContainerRating.centerXAnchor).isActive = true
-//        labelRating.centerYAnchor.constraint(equalTo: self.viewContainerRating.centerYAnchor).isActive = true
-
         viewBachground.anchor(top: self.view.topAnchor,
                               paddingTop: 0,
-                              bottom: self.view.bottomAnchor,
+                              bottom: self.view.safeAreaLayoutGuide.bottomAnchor,
                               paddingBottom: 0,
                               left: self.view.leadingAnchor,
                               paddingLeft: 0,
@@ -278,5 +319,169 @@ extension RestaurantDetailsViewController {
             stackViewRatingCircles.addArrangedSubview(views[item])
         }
         
+        initCollectionViewItemsFood()
+        initCollectionViewSectinos()
     }
+}
+
+//MARK: - UICollectionView Delegate, DataSource, FlowLayout
+extension RestaurantDetailsViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
+    
+    func initCollectionViewSectinos() {
+
+        self.sections = [ SectionFoods(name: "All", id: 0, isSelected: true, itemsFoods: [ItemFood(name: "9 PCS DIPS BUCKET", imageName: "food1", id: 1, isSelected: false),
+                                                                                          ItemFood(name: "BUCKET FOR 2", imageName: "food2", id: 2, isSelected: false),
+                                                                                          ItemFood(name: "SUPER BUCKET 21 PCS MIX", imageName: "food3", id: 3, isSelected: false),
+                                                                                          ItemFood(name: "SUPER BUCKET 15 PCS", imageName: "food4", id: 6, isSelected: false),
+                                                                                          ItemFood(name: "TWISTER BLAZE BOX", imageName: "food5", id: 4, isSelected: false),
+                                                                                          ItemFood(name: "ZENGER", imageName: "food6", id: 5, isSelected: false),
+                                                                                          ItemFood(name: "Variety Meal", imageName: "food7", id: 6, isSelected: false),
+                                                                                          ItemFood(name: "Variety Meal", imageName: "food7", id: 7, isSelected: false),
+                                                                                          ItemFood(name: "Double Bucket", imageName: "food8", id: 8, isSelected: false),
+                                                                                          ItemFood(name: "Pepper Onion Fries", imageName: "food9", id: 7, isSelected: false),
+                                                                                          ItemFood(name: "CHOCOLATE CAKE", imageName: "food10", id: 8, isSelected: false),
+                                                                                          ItemFood(name: "FRESH ORANGE JUICE", imageName: "food11", id: 9, isSelected: false),
+                                                                                         ]),
+                          SectionFoods(name: "DEALS", id: 1, isSelected: false, itemsFoods: [ItemFood(name: "9 PCS DIPS BUCKET", imageName: "food1", id: 1, isSelected: false),
+                                                                                             ItemFood(name: "BUCKET FOR 2", imageName: "food2", id: 2, isSelected: false),
+                                                                                             ItemFood(name: "SUPER BUCKET 21 PCS MIX", imageName: "food3", id: 3, isSelected: false),
+                                                                                             ItemFood(name: "SUPER BUCKET 15 PCS", imageName: "food4", id: 6, isSelected: false),
+                                                                                            ]),
+                          SectionFoods(name: "FOR ONE", id: 2, isSelected: false, itemsFoods: [ItemFood(name: "TWISTER BLAZE BOX", imageName: "food5", id: 4, isSelected: false),
+                                                                                               ItemFood(name: "ZENGER", imageName: "food6", id: 5, isSelected: false),
+                                                                                                ]),
+                          SectionFoods(name: "SHARING", id: 3, isSelected: false, itemsFoods: [ItemFood(name: "Variety Meal", imageName: "food7", id: 7, isSelected: false),
+                                                                                               ItemFood(name: "Double Bucket", imageName: "food8", id: 8, isSelected: false),
+                                                                                              ]),
+                          SectionFoods(name: "DESSERTS", id: 3, isSelected: false, itemsFoods: [ItemFood(name: "Pepper Onion Fries", imageName: "food9", id: 7, isSelected: false),
+                                                                                                 ItemFood(name: "CHOCOLATE CAKE", imageName: "food10", id: 8, isSelected: false),
+                                                                                                 ItemFood(name: "FRESH ORANGE JUICE", imageName: "food11", id: 9, isSelected: false),
+                                                                                                ]),
+        ]
+        
+        sectionFoods = sections[0]
+        
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: self.view.frame.width / 3.7, height: 50)
+        collectionViewSections = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionViewSections.backgroundColor = .clear
+        collectionViewSections.translatesAutoresizingMaskIntoConstraints = false
+        collectionViewSections.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        view.addSubview(collectionViewSections)
+        
+        collectionViewSections.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
+        collectionViewSections.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionViewSections.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        collectionViewSections.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        collectionViewSections.dataSource = self
+        collectionViewSections.delegate = self
+
+        collectionViewSections.collectionViewLayout = layout
+        collectionViewSections.register(SectionFoodCollectionViewCell.self, forCellWithReuseIdentifier: "SectionFoodCollectionViewCell")
+        collectionViewSections.contentInsetAdjustmentBehavior = .always
+        collectionViewSections.backgroundColor = Colors.background
+        collectionViewSections.isPagingEnabled = true
+        collectionViewSections.showsHorizontalScrollIndicator = false
+
+        collectionViewSections.reloadData()
+
+    }
+
+    func initCollectionViewItemsFood() {
+
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+
+        collectionViewItemsFood = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionViewItemsFood.translatesAutoresizingMaskIntoConstraints = false
+        collectionViewItemsFood.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: +40, right: 0)
+        view.addSubview(collectionViewItemsFood)
+        
+        collectionViewItemsFood.topAnchor.constraint(equalTo: viewContainerStackHoursAndRating.safeAreaLayoutGuide.bottomAnchor, constant: 20).isActive = true
+        collectionViewItemsFood.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        collectionViewItemsFood.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        collectionViewItemsFood.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50).isActive = true
+
+        collectionViewItemsFood.collectionViewLayout = layout
+        collectionViewItemsFood.register(ItemCollectionViewCell.self, forCellWithReuseIdentifier: "ItemCollectionViewCell")
+        collectionViewItemsFood.contentInsetAdjustmentBehavior = .always
+        collectionViewItemsFood.dataSource = self
+        collectionViewItemsFood.delegate = self
+        if let collectionViewLayout = collectionViewItemsFood.collectionViewLayout as? UICollectionViewFlowLayout {
+           collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        }
+
+        collectionViewItemsFood.backgroundColor = .white
+        collectionViewItemsFood.isPagingEnabled = true
+        collectionViewItemsFood.showsHorizontalScrollIndicator = false
+
+        collectionViewItemsFood.reloadData()
+
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        switch collectionView {
+        case collectionViewSections:
+           return self.sections.count
+        default:
+           return self.sectionFoods.itemsFoods.count
+        }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        switch collectionView {
+        case collectionViewSections:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SectionFoodCollectionViewCell", for: indexPath) as! SectionFoodCollectionViewCell
+            cell.section = self.sections[indexPath.row]
+            return cell
+        default:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
+            cell.item = self.sectionFoods.itemsFoods[indexPath.row]
+            return cell
+        }
+
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+        
+        switch collectionView {
+        case collectionViewSections:
+            self.sectionFoods = sections[indexPath.row]
+
+            for item in 0..<self.sections.count {
+                if indexPath.row == item {
+                    self.sections[item].isSelected = true
+                } else {
+                    self.sections[item].isSelected = false
+                }
+            }
+            
+            self.collectionViewSections.reloadData()
+            self.collectionViewItemsFood.reloadData()
+        default:
+
+            let vc = ItemDetailsViewController()
+//            vc.delegate = self
+            vc.item = self.sectionFoods.itemsFoods[indexPath.row]
+            vc.closure = { [weak self] items in
+                if let self = self {
+                    for itr in 0..<items.count {
+                        self.itemsCart.append(items[itr])
+                    }
+                    self.cartButtonNavBar()
+                }
+            }
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true, completion: nil)
+
+        }
+        
+    }
+    
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E00C71127DE379700859628 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00C71027DE379700859628 /* LoginView.swift */; };
+		0E00C71527E01A2D00859628 /* NotLoginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00C71427E01A2D00859628 /* NotLoginLabel.swift */; };
 		0E01C2BE27D0E06100C124C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2BD27D0E06100C124C5 /* AppDelegate.swift */; };
 		0E01C2C727D0E06200C124C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E01C2C627D0E06200C124C5 /* Assets.xcassets */; };
 		0E01C2CA27D0E06200C124C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E01C2C827D0E06200C124C5 /* LaunchScreen.storyboard */; };
@@ -15,9 +17,15 @@
 		0E01C2E627D1BDA800C124C5 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2E527D1BDA800C124C5 /* RestaurantDetailsViewController.swift */; };
 		0E01C2E927D1D16100C124C5 /* GetRestaurantsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2E827D1D16100C124C5 /* GetRestaurantsData.swift */; };
 		0E01C2EC27D219DF00C124C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C2EB27D219DF00C124C5 /* Colors.swift */; };
-		0EB184A527D5D4180084B6C5 /* FilterSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A427D5D4180084B6C5 /* FilterSideMenuViewController.swift */; };
+		0E6B653427D75E5600A67893 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B653327D75E5600A67893 /* Offer.swift */; };
+		0EABBE2827D7E0E000092818 /* AboutJahezViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EABBE2727D7E0E000092818 /* AboutJahezViewController.swift */; };
+		0EABBE2A27DCA13800092818 /* SectionFoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EABBE2927DCA13800092818 /* SectionFoodCollectionViewCell.swift */; };
+		0EABBE2C27DCA42F00092818 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EABBE2B27DCA42F00092818 /* ItemCollectionViewCell.swift */; };
+		0EABBE2E27DCA49400092818 /* SectionFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EABBE2D27DCA49400092818 /* SectionFood.swift */; };
+		0EABBE3027DCE6E600092818 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EABBE2F27DCE6E600092818 /* ItemDetailsViewController.swift */; };
+		0EB184A527D5D4180084B6C5 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A427D5D4180084B6C5 /* SideMenuViewController.swift */; };
 		0EB184A727D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */; };
-		0EB184A927D5E5610084B6C5 /* FilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A827D5E5610084B6C5 /* FilterSection.swift */; };
+		0EB184A927D5E5610084B6C5 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184A827D5E5610084B6C5 /* MenuSection.swift */; };
 		0EB184AB27D5E7240084B6C5 /* FilterSectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */; };
 		0EB184B327D6453F0084B6C5 /* JahezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184B227D6453F0084B6C5 /* JahezTests.swift */; };
 		0EB184BA27D64B560084B6C5 /* GetRestaurantsDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB184B927D64B560084B6C5 /* GetRestaurantsDataTest.swift */; };
@@ -29,6 +37,7 @@
 		0EE66CB027D2C60800D2EB3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CAF27D2C60800D2EB3A /* Constants.swift */; };
 		0EE66CB627D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CB527D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift */; };
 		0EE66CBC27D5733A00D2EB3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE66CBB27D5733A00D2EB3A /* Extensions.swift */; };
+		0EE7B9A127E406CD002A4651 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7B9A027E406CD002A4651 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E00C71027DE379700859628 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0E00C71427E01A2D00859628 /* NotLoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotLoginLabel.swift; sourceTree = "<group>"; };
 		0E01C2BA27D0E06100C124C5 /* Jahez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jahez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E01C2BD27D0E06100C124C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E01C2C627D0E06200C124C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,9 +63,15 @@
 		0E01C2E527D1BDA800C124C5 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
 		0E01C2E827D1D16100C124C5 /* GetRestaurantsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRestaurantsData.swift; sourceTree = "<group>"; };
 		0E01C2EB27D219DF00C124C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		0EB184A427D5D4180084B6C5 /* FilterSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSideMenuViewController.swift; sourceTree = "<group>"; };
+		0E6B653327D75E5600A67893 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		0EABBE2727D7E0E000092818 /* AboutJahezViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutJahezViewController.swift; sourceTree = "<group>"; };
+		0EABBE2927DCA13800092818 /* SectionFoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		0EABBE2B27DCA42F00092818 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		0EABBE2D27DCA49400092818 /* SectionFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFood.swift; sourceTree = "<group>"; };
+		0EABBE2F27DCE6E600092818 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		0EB184A427D5D4180084B6C5 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSectionCollectionViewCell.swift; sourceTree = "<group>"; };
-		0EB184A827D5E5610084B6C5 /* FilterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSection.swift; sourceTree = "<group>"; };
+		0EB184A827D5E5610084B6C5 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSectionProtocol.swift; sourceTree = "<group>"; };
 		0EB184B027D6453F0084B6C5 /* JahezTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JahezTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB184B227D6453F0084B6C5 /* JahezTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezTests.swift; sourceTree = "<group>"; };
@@ -64,6 +81,7 @@
 		0EE66CAF27D2C60800D2EB3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0EE66CB527D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell_1.swift; sourceTree = "<group>"; };
 		0EE66CBB27D5733A00D2EB3A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0EE7B9A027E406CD002A4651 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +144,8 @@
 			children = (
 				0E01C2E727D1CD8000C124C5 /* UICollectionViewCells */,
 				0E01C2C827D0E06200C124C5 /* LaunchScreen.storyboard */,
+				0E00C71027DE379700859628 /* LoginView.swift */,
+				0E00C71427E01A2D00859628 /* NotLoginLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,7 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				0E01C2D627D0E0CA00C124C5 /* Restaurant.swift */,
-				0EB184A827D5E5610084B6C5 /* FilterSection.swift */,
+				0E6B653327D75E5600A67893 /* Offer.swift */,
+				0EB184A827D5E5610084B6C5 /* MenuSection.swift */,
+				0EABBE2D27DCA49400092818 /* SectionFood.swift */,
+				0EE7B9A027E406CD002A4651 /* User.swift */,
 				0EB184AA27D5E7240084B6C5 /* FilterSectionProtocol.swift */,
 			);
 			path = Models;
@@ -143,9 +166,11 @@
 		0E01C2D327D0E09600C124C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0EE66CA727D2375E00D2EB3A /* SplushViewController.swift */,
 				0EB184A327D5D3EB0084B6C5 /* RestaurantsViewController */,
 				0E01C2E527D1BDA800C124C5 /* RestaurantDetailsViewController.swift */,
-				0EE66CA727D2375E00D2EB3A /* SplushViewController.swift */,
+				0EABBE2F27DCE6E600092818 /* ItemDetailsViewController.swift */,
+				0EABBE2727D7E0E000092818 /* AboutJahezViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,8 +186,10 @@
 		0E01C2E727D1CD8000C124C5 /* UICollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */,
 				0EE66CB527D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift */,
+				0EB184A627D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift */,
+				0EABBE2927DCA13800092818 /* SectionFoodCollectionViewCell.swift */,
+				0EABBE2B27DCA42F00092818 /* ItemCollectionViewCell.swift */,
 			);
 			path = UICollectionViewCells;
 			sourceTree = "<group>";
@@ -190,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				0E01C2D427D0E0BB00C124C5 /* RestaurantsViewController.swift */,
-				0EB184A427D5D4180084B6C5 /* FilterSideMenuViewController.swift */,
+				0EB184A427D5D4180084B6C5 /* SideMenuViewController.swift */,
 			);
 			path = RestaurantsViewController;
 			sourceTree = "<group>";
@@ -324,18 +351,27 @@
 			files = (
 				0EE66CBC27D5733A00D2EB3A /* Extensions.swift in Sources */,
 				0EE66CA827D2375E00D2EB3A /* SplushViewController.swift in Sources */,
+				0EABBE3027DCE6E600092818 /* ItemDetailsViewController.swift in Sources */,
+				0EABBE2E27DCA49400092818 /* SectionFood.swift in Sources */,
 				0E01C2EC27D219DF00C124C5 /* Colors.swift in Sources */,
+				0EABBE2C27DCA42F00092818 /* ItemCollectionViewCell.swift in Sources */,
 				0EB184AB27D5E7240084B6C5 /* FilterSectionProtocol.swift in Sources */,
-				0EB184A927D5E5610084B6C5 /* FilterSection.swift in Sources */,
+				0EB184A927D5E5610084B6C5 /* MenuSection.swift in Sources */,
 				0E01C2E927D1D16100C124C5 /* GetRestaurantsData.swift in Sources */,
 				0E01C2D727D0E0CA00C124C5 /* Restaurant.swift in Sources */,
 				0EE66CB627D4028C00D2EB3A /* RestaurantCollectionViewCell_1.swift in Sources */,
+				0E6B653427D75E5600A67893 /* Offer.swift in Sources */,
+				0EABBE2827D7E0E000092818 /* AboutJahezViewController.swift in Sources */,
 				0EE66CB027D2C60800D2EB3A /* Constants.swift in Sources */,
 				0E01C2BE27D0E06100C124C5 /* AppDelegate.swift in Sources */,
-				0EB184A527D5D4180084B6C5 /* FilterSideMenuViewController.swift in Sources */,
+				0E00C71127DE379700859628 /* LoginView.swift in Sources */,
+				0EABBE2A27DCA13800092818 /* SectionFoodCollectionViewCell.swift in Sources */,
+				0EB184A527D5D4180084B6C5 /* SideMenuViewController.swift in Sources */,
 				0E01C2D527D0E0BB00C124C5 /* RestaurantsViewController.swift in Sources */,
 				0E01C2E627D1BDA800C124C5 /* RestaurantDetailsViewController.swift in Sources */,
+				0E00C71527E01A2D00859628 /* NotLoginLabel.swift in Sources */,
 				0EB184A727D5E45E0084B6C5 /* FilterSectionCollectionViewCell.swift in Sources */,
+				0EE7B9A127E406CD002A4651 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

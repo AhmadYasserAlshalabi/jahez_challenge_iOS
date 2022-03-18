@@ -9,4 +9,5 @@ import Foundation
 
 protocol FilterSectionDelegate: AnyObject {
     func clickFilterSection(index: Int)
+    func clickMenuSection(index: Int)
 }
